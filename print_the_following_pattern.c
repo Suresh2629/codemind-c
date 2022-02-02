@@ -3,19 +3,17 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    int m=n;
     for(int i=1;i<=n;i++)
     {
         for(int j=1;j<=n;j++)
         {
-            if(i==j||j==m)
-            printf("x");
-            else
+            if(i==j)
             printf("0");
+            else
+            printf("x");
         }
         printf("
 ");
-        m--;
     }
     return 0;
 }

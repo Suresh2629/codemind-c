@@ -12,8 +12,8 @@ for(i = 1; i < num; i++)
     }  
 }  
 if (sum == num)  
-    printf("True");  
-    else  
-    printf("False");  
+printf("True");  
+else  
+printf("False");  
 return 0;  
 }

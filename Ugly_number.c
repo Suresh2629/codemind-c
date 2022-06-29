@@ -1,14 +1,8 @@
 # include <stdio.h>
-# include <string.h>
-
 int main()
 {
 int n,x=0;
-
-  scanf("%d",&n);
-
-      if (n <= 0) {  
-        }
+  scanf("%d",&n);  
        while (n != 1) 
        {  
             if (n % 5 == 0) 
@@ -32,7 +26,6 @@ int n,x=0;
         } 
 		        if (x==0)
 		        { 
-                printf("Ugly Number
-");
+                printf("Ugly Number");
                 }
 }

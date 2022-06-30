@@ -1,23 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n,a[50],sum=0,i,avg,c=0;
+    int ar[100],n,sum=0,c=0;
+    int a;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&ar[i]);
+        sum=sum+ar[i];
     }
-    for(i=0;i<n;i++)
+    a=(sum/n);
+    for(int i=0;i<n;i++)
     {
-        sum=sum+a[i];
-    }
-    avg=sum/n;
-    for(i=0;i<n;i++)
-    {
-        if(a[i]>=avg)
-        {
-            c++;
-        }
+        if(ar[i]>=a)
+        c++;
     }
     printf("%d",c);
 }

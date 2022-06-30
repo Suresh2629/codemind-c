@@ -1,26 +1,25 @@
 #include<stdio.h>
 int main()
 {
-    int a[50],n,i,count;
+    int ar[100],i,n,f=0;
     scanf("%d",&n);
-    
-    for(i=0;i<=n;i++)
-    {
-        scanf("%d",&a[i]);
-    }
-    
     for(i=0;i<n;i++)
     {
-        if(a[i]%2!=0)
+        scanf("%d",&ar[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(i%2==0)
         {
-            if(i%2==0)
+            if(ar[i]%2!=0)
             {
-                printf("False");
-                return 0;
+                f=1;
+                break;
             }
         }
     }
+    if(f==0)
     printf("True");
-    return 0;
-    
+    else
+    printf("False");
 }

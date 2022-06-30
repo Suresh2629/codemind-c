@@ -1,18 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int n,arr[50],i,k,c=0;
-    scanf("%d %d",&n,&k);
-    for(i=0;i<n;i++)
+    int ar[100],n,k,count=0;
+    scanf("%d%d",&n,&k);
+    for(int i=0;i<n;i++)
     {
-        scanf("%d",&arr[i]);
-    }
-    for(i=0;i<n;i++)
-    {
-        if(arr[i]%k!=0)
+        scanf("%d",&ar[i]);
+        if(ar[i]%k!=0)
         {
-            c++;
+            count++;
         }
     }
-    printf("%d",c);
+    printf("%d",count);
 }
